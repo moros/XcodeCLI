@@ -5,6 +5,51 @@
 ## User settings
 xcuserdata/
 
+##### Swift Package Manager ###################################################
+# Build cache and lock-files created by swift-package-manager or Xcode’s SPM UI
+# (add the second line if you do NOT want to commit the lock-file at all).
+.build/
+.swiftpm/
+SourcePackages/
+**/xcshareddata/swiftpm/Package.resolved
+**/Package.resolved
+
+##### Workspace / project-level user data #####################################
+# IDE state that changes every time Xcode is opened.
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+# Per-user break-points & UI layout
+*.xcuserstate
+*.xcbkptlist
+
+##### Workspace settings that are always regenerated ##########################
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+##### SwiftUI previews & Xcode 15+ canvas assets ##############################
+*.preview-thumbnails
+*.xcpreview/
+
+##### Misc. build results & diagnostics #######################################
+*.xcresult        # Xcode test / build reports
+*.ipadiagnostics  # iPadOS on-device test logs generated via Xcode 15+
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
 ## Obj-C/Swift specific
 *.hmap
 
@@ -49,6 +94,10 @@ playground.xcworkspace
 
 Carthage/Build/
 
+# Accio dependency management
+Dependencies/
+.accio/
+
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo.
@@ -60,3 +109,10 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
